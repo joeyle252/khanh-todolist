@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <h1> TODO LIST </h1>
     <select id="priority">
@@ -16,15 +19,10 @@
     </select>
     <input id="todoInput">
     <button onclick="addItem()"> Add </button>
-    <div>
-    <button onclick="allButton()">All</button>
-    <button id="totalToDoList"> </button>
-    <button>Undone</button>
-    <button></button>
-    <button>Done</button>
-    <button></button>
+    <div class="totalArea">
+        
     </div>
-    <ul id="resultArea"> 
+    <ul id="resultArea">
 
 
     </ul>
@@ -32,4 +30,5 @@
 
     <script src="main.js"> </script>
 </body>
+
 </html>
