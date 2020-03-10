@@ -1,13 +1,12 @@
 
 let inputValue = document.getElementById('todoInput');
+
 let allButtonValue = document.getElementById('todoInput');
+
 let countToDoList = document.getElementById('totalToDoList');
 
-// when call addItem => sum of value of inputValue
-
-// console.log(sumOfToTalToDoListValue);
-
 let todoList = [];
+
 let sumOfToDoValue = [];
 
 let addItem = ()=>{
@@ -27,9 +26,30 @@ let removeItem = (index)=> {
     render();
 }
 
+let toggle =(index)=>{
+     todoList[index].isDone = !(todoList[index].isDone);
+     console.log("khanh",todoList);
+     render();
+}
+
+// let undone = ()=>{
+//     let isDone = todoList[index].isDone;
+//     let undoneArray = todoList.filter(index){
+//         if (isDone === false){
+//             return true
+//         } return false
+//     }
+//     }
+
+
 let render =()=>{
+     
     let htmlToDoArray = todoList.map((item,index)=>{
-        return `<li> ${item.text} <button onclick="removeItem(${index})">x</button> </li>`
+        if(item.isDone == false){
+            return `<li onclick="toggle(${index})"> ${item.text} <button onclick="removeItem(${index})">x</button> </li>`
+        } else {
+            return  `<li onclick="toggle(${index})"> ${item.text} <button onclick="removeItem(${index})">x</button> </li>`.strike();
+        }
     }).join('');
     document.getElementById("resultArea").innerHTML = htmlToDoArray;
 }
