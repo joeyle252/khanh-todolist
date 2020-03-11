@@ -1,4 +1,52 @@
+body{
+    background-color: orange;
+    /* cursor: url("https://i.imgur.com/PP2I38w.png"),auto; */
+}
+.todocontainer {
+    border-radius: 40px;
+    background-image: url("img/FILE-20170822-15207Z2ZBH3UKLS6.png");
+    height: 600px;
+    width: 1150px;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 5%;
+
+}
+.todocontainer > h1 {
+    color: green;
+    padding-top: 5%;
+}
+
 .totalArea {
     display: flex;
     flex-direction: row;
+}
+.totalArea > button {
+    width: 80px;
+    height: 30px;
+    background-color: grey;
+    margin: 8px;
+    border-radius: 10px;    
+
+
+}
+.totalArea > button:hover {
+    background-color: green;
+    
+}
+#priority {
+    height: 35px;
+    border: 2px solid red;
+    font-size: 20px;
+}
+#todoInput {
+    height: 35px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.addButton {
+    height: 37px;
+    border-radius: 5px;
+    font-size: 20px;
 }

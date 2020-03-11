@@ -10,23 +10,23 @@
 </head>
 
 <body>
-    <h1> TODO LIST </h1>
-    <select id="priority">
-        <option value="">priority</option>
-        <option value="one">1</option>
-        <option value="two">2</option>
-        <option value="three">3</option>
-    </select>
-    <input id="todoInput">
-    <button onclick="addItem()"> Add </button>
-    <div class="totalArea">
+    <div class="todocontainer">
         
+        <h1> KHANH'S TODO LIST </h1>
+        <select id="priority">
+            <option value="">priority</option>
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+        </select>
+        <input id="todoInput">
+        <button class="addButton" onclick="addItem()"> Add </button>
+        <div class="totalArea">
+
+        </div>
+        <ul id="resultArea">
+        </ul>
     </div>
-    <ul id="resultArea">
-
-
-    </ul>
-
 
     <script src="main.js"> </script>
 </body>
