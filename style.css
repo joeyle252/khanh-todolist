@@ -4,12 +4,11 @@ body{
 }
 .todocontainer {
     border-radius: 40px;
-    background-image: url("img/FILE-20170822-15207Z2ZBH3UKLS6.png");
-    height: 600px;
-    width: 1150px;
+    background-image: url("img/totoro.jpg");
+    height: 482px;
+    width: 885px;
     margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
     padding-left: 5%;
 
 }
@@ -37,7 +36,6 @@ body{
 }
 #priority {
     height: 35px;
-    border: 2px solid red;
     font-size: 20px;
 }
 #todoInput {
